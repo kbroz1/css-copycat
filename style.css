@@ -1,0 +1,48 @@
+.flexbox-container {
+    display:flex;
+    background-color:black;
+    height:120px;
+    padding: 5px;
+
+    
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+
+}
+
+.first-columb, .second-column, .third-column {
+    align-items:flex-start;
+}
+
+.fourth-column {
+    align-items:flex-end;
+    margin-left:auto;
+
+}
+
+.rotate {
+    animation: rotation 9s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+footer {
+    color:orange;
+    text-align:center;
+    background-color: black;
+    bottom:0;
+    position:fixed;
+    width:100%;
+
+
+}
