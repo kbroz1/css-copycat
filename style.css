@@ -1,4 +1,4 @@
-.flexbox-container {
+.container-one {
     display:flex;
     background-color:black;
     height:120px;
@@ -14,7 +14,7 @@ img {
 
 }
 
-.first-columb, .second-column, .third-column {
+.first-column, .second-column, .third-column {
     align-items:flex-start;
 }
 
@@ -36,6 +36,56 @@ img {
     }
   }
 
+.container-two{
+    display:flex;
+    background-color: purple;
+    justify-content: center;
+   width: 30%;
+   height:30%;
+   min-width:500px;
+   height:100%;
+   position:absolute;
+    
+}
+
+
+/* .flex-five {
+    display:flex;
+    margin: 20px 20px;
+   position: relative;
+  
+} */
+
+
+.big-coin {
+    width:300px;
+    height:300px;
+    padding-top:20px;
+    flex-shrink:0;
+    
+}
+
+
+.container-three {
+    display:flex;
+    flex-direction:column;
+}
+
+.coin1 img, .coin2 img, .coin3 img{
+    width:50px;
+    height:50px;
+    margin-left:-200px;
+    margin-top:20px;
+    flex-shrink:0;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite; 
+}
+
+
+
+
+
 footer {
     color:orange;
     text-align:center;
@@ -46,3 +96,8 @@ footer {
 
 
 }
+
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
